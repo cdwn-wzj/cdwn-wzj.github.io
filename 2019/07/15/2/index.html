@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Hello World - hexo</title>
+    <title>简单的对象内存图 - hexo</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate">
     <meta name="keywords" content="Fechin,"> 
-    <meta name="description" content="我的经验分享,Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any pr,"> 
+    <meta name="description" content="我的经验分享,当我们创建对象、访问成员变量、调用成员方法时内存中所产生的的变化
+1.进入方法区找到main方法2.main方法进栈（或压栈）3.进栈后栈（Stack）会为main方法开辟一个的空间，并创建变量4.,"> 
     <meta name="author" content="cdwn"> 
     <link rel="alternative" href="atom.xml" title="hexo" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -35,7 +36,7 @@
     <div class="bar" style="width: 0;"></div>
     <a class="icon-home image-icon" href="javascript:;" data-url="http://yoursite.com"></a>
     <div title="播放/暂停" class="icon-play"></div>
-    <h3 class="subtitle">Hello World</h3>
+    <h3 class="subtitle">简单的对象内存图</h3>
     <div class="social">
         <!--<div class="like-icon">-->
             <!--<a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
@@ -53,27 +54,17 @@
     <div class="section">
         <div class="article">
     <div class='main'>
-        <h1 class="title">Hello World</h1>
+        <h1 class="title">简单的对象内存图</h1>
         <div class="stuff">
-            <span>七月 03, 2019</span>
+            <span>七月 15, 2019</span>
             
+  <ul class="post-tags-list"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/学习/">学习</a></li></ul>
+
 
         </div>
         <div class="content markdown">
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
+            <h2 id="当我们创建对象、访问成员变量、调用成员方法时内存中所产生的的变化"><a href="#当我们创建对象、访问成员变量、调用成员方法时内存中所产生的的变化" class="headerlink" title="当我们创建对象、访问成员变量、调用成员方法时内存中所产生的的变化"></a>当我们创建对象、访问成员变量、调用成员方法时内存中所产生的的变化</h2><p><img src="/2019/07/15/2/1.png" alt="git"></p>
+<h4 id="1-进入方法区找到main方法"><a href="#1-进入方法区找到main方法" class="headerlink" title="1.进入方法区找到main方法"></a>1.进入方法区找到main方法</h4><h4 id="2-main方法进栈（或压栈）"><a href="#2-main方法进栈（或压栈）" class="headerlink" title="2.main方法进栈（或压栈）"></a>2.main方法进栈（或压栈）</h4><h4 id="3-进栈后栈（Stack）会为main方法开辟一个的空间，并创建变量"><a href="#3-进栈后栈（Stack）会为main方法开辟一个的空间，并创建变量" class="headerlink" title="3.进栈后栈（Stack）会为main方法开辟一个的空间，并创建变量"></a>3.进栈后栈（Stack）会为main方法开辟一个的空间，并创建变量</h4><h4 id="4-在堆中new出对象"><a href="#4-在堆中new出对象" class="headerlink" title="4.在堆中new出对象"></a>4.在堆中new出对象</h4><h4 id="5-在方法区中找到所new对象的成员变量并以它为模板在堆内存中创建一样的成员变量，然后在堆内存中赋上默认值"><a href="#5-在方法区中找到所new对象的成员变量并以它为模板在堆内存中创建一样的成员变量，然后在堆内存中赋上默认值" class="headerlink" title="5.在方法区中找到所new对象的成员变量并以它为模板在堆内存中创建一样的成员变量，然后在堆内存中赋上默认值"></a>5.在方法区中找到所new对象的成员变量并以它为模板在堆内存中创建一样的成员变量，然后在堆内存中赋上默认值</h4><h4 id="6-然后在方法区找到成员方法的地址并把它赋给堆当中的成员方法-注意：堆中的成员方法只是指向方法区里成员方法的地址"><a href="#6-然后在方法区找到成员方法的地址并把它赋给堆当中的成员方法-注意：堆中的成员方法只是指向方法区里成员方法的地址" class="headerlink" title="6.然后在方法区找到成员方法的地址并把它赋给堆当中的成员方法(注意：堆中的成员方法只是指向方法区里成员方法的地址)"></a>6.然后在方法区找到成员方法的地址并把它赋给堆当中的成员方法(注意：堆中的成员方法只是指向方法区里成员方法的地址)</h4><h4 id="7-把方法区里new对象的地址赋给栈内的变量"><a href="#7-把方法区里new对象的地址赋给栈内的变量" class="headerlink" title="7.把方法区里new对象的地址赋给栈内的变量"></a>7.把方法区里new对象的地址赋给栈内的变量</h4><h4 id="8-在mian方法中修改成员变量会通过被赋予地址的变量找到堆内的new对象并对其成员变量进行修改"><a href="#8-在mian方法中修改成员变量会通过被赋予地址的变量找到堆内的new对象并对其成员变量进行修改" class="headerlink" title="8.在mian方法中修改成员变量会通过被赋予地址的变量找到堆内的new对象并对其成员变量进行修改"></a>8.在mian方法中修改成员变量会通过被赋予地址的变量找到堆内的new对象并对其成员变量进行修改</h4><h4 id="9-栈内调用到成员方法时会先通过地址找到堆内的成员方法然后又通过堆内的成员方法所指向的地址找到方法区里的成员方法，最后让其进栈"><a href="#9-栈内调用到成员方法时会先通过地址找到堆内的成员方法然后又通过堆内的成员方法所指向的地址找到方法区里的成员方法，最后让其进栈" class="headerlink" title="9.栈内调用到成员方法时会先通过地址找到堆内的成员方法然后又通过堆内的成员方法所指向的地址找到方法区里的成员方法，最后让其进栈"></a>9.栈内调用到成员方法时会先通过地址找到堆内的成员方法然后又通过堆内的成员方法所指向的地址找到方法区里的成员方法，最后让其进栈</h4><h4 id="10-进栈完成后为其开辟空间，等执行完方法内的操作完成后会就出栈（或弹栈）"><a href="#10-进栈完成后为其开辟空间，等执行完方法内的操作完成后会就出栈（或弹栈）" class="headerlink" title="10.进栈完成后为其开辟空间，等执行完方法内的操作完成后会就出栈（或弹栈）"></a>10.进栈完成后为其开辟空间，等执行完方法内的操作完成后会就出栈（或弹栈）</h4><h4 id="11-当main方法执行完成后就会自动出栈，程序就此结束了"><a href="#11-当main方法执行完成后就会自动出栈，程序就此结束了" class="headerlink" title="11.当main方法执行完成后就会自动出栈，程序就此结束了"></a>11.当main方法执行完成后就会自动出栈，程序就此结束了</h4>
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
                 <source type="audio/mpeg" src="">
